@@ -3,15 +3,20 @@ package com.syntax.classProjects1;
 public class Task9 {
 
 	public static void main(String[] args) {
+		//Maximum and minimum number in the array?
 		
-		int[] num = new int[10];
-		num[0] = 0;
-		num[1] = 1;
-		System.out.print(num[0] + " " + num[1] + " ");
-
-		for (int i = 2; i < 10; i++) {
-			num[i] = num[i - 1] + num[i - 2];
-			System.out.print(num[i] + " ");
-		}
-}
+				int[] array= {21,52,13,58,49,165,147};
+				
+				int max=array[0];
+				int min=array[0];
+				
+				for(int i=0;i<array.length;i++) {
+					if(array[i]<min)min=array[i];
+					if(array[i]>max)max=array[i];
+				}
+				System.out.println("The smallest value in the array is "+min);
+				System.out.println("The largest value in the array is "+max);
+				
+				
+			}
 }
